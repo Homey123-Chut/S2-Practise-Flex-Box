@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: pink;
+      }
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-left: 10em;
+    padding-right: 10em; 
+    background-color: pink; 
+}
+
+.spacer {
+    height: 1em;              
+    background-color: greenyellow;    
+    width: 100%;               
+}
+
+.header,
+.main,
+.footer {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background-color: gray;
+    color: black;
+    width: 100%;
+    height: 100px;  
+             
+}
+
+.main {
+    flex-grow: 1;              
+    position: relative;
+}
+
+/*.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 3em;
+    color: white;
+}
+
+*/
+.main-label {
+    margin-left: 1em;
+    flex-grow: 1;               /* Smaller flex-grow value */
+    align-self: flex-start;
+}
+.arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    flex-grow: 2;               /* Larger flex-grow value to take more space */
+    gap: 0.5em;
+}
